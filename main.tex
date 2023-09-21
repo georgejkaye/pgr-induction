@@ -1,0 +1,81 @@
+%%% Local Variables:
+%%% TeX-command-extra-options: "-shell-escape"
+%%% End:
+
+\documentclass[
+  aspectratio=169,
+  xcolor={dvipsnames},
+  hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},
+  usepdftitle=false
+]{beamer}
+\usepackage{presentation}
+% Enter title of presentation PDF:
+\hypersetup{pdftitle={Constructive Principles and Effects}}
+
+% Packages for using unicode
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.75]{DejaVuSansMono} % Good monospace font for code
+
+\DeclareUnicodeCharacter{03A3}{\(\Sigma\)}
+\DeclareUnicodeCharacter{03A0}{\(\Pi\)}
+\DeclareUnicodeCharacter{2115}{\scalebox{0.8}{\(\nat\)}}
+\DeclareUnicodeCharacter{03B1}{\(\alpha\)}
+
+\usepackage{amsmath,amsthm,amssymb,amsfonts,mathtools}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{ifthen}
+\usepackage{pgfgantt}
+\usepackage{bbold}
+\usepackage{todonotes}
+\usepackage{bussproofs}
+%\usepackage{quiver}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{mathpartir}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array}
+
+
+%--------------------------------------------------------------------------------
+% Document proper
+\begin{document}
+
+
+% Title page
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+  \node[above right,inner sep=0pt] at (current page.south west)
+  {
+    \includegraphics[width=\paperwidth]{imgs/skyline.png}
+  };
+
+  \node[below right, inner sep=0pt] at (current page.north west)
+  {
+    \includegraphics[width=0.4\paperwidth]{imgs/crest.png}
+  };
+
+  % Title
+  \node[below right=3cm and 0.55cm] at (current page.north west)
+  {\LARGE `Experience through students' lenses'};
+
+  % Subtitle
+  \node[below right=3.8cm and 0.55cm] at (current page.north west)
+  {(I did not choose this title)};
+
+  % Author
+  \node[below right=4.5cm and 0.55cm] at (current page.north west)
+  {\small George Kaye (Further Years Rep)};
+
+  %% Date
+  %\node[below right] (date) at (author.south west) {\today};
+\end{tikzpicture}
+\end{frame}
+
+\end{document}
