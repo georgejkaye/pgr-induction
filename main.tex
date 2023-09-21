@@ -1,13 +1,6 @@
 %%% Local Variables:
 %%% TeX-command-extra-options: "-shell-escape"
 %%% End:
-
-\documentclass[
-  aspectratio=169,
-  xcolor={dvipsnames},
-  hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},
-  usepdftitle=false
-]{beamer}
 \usepackage{presentation}
 % Enter title of presentation PDF:
 \hypersetup{pdftitle={Constructive Principles and Effects}}
@@ -19,29 +12,12 @@
 \usepackage[T1]{fontenc}
 \usepackage[scaled=0.75]{DejaVuSansMono} % Good monospace font for code
 
-\DeclareUnicodeCharacter{03A3}{\(\Sigma\)}
-\DeclareUnicodeCharacter{03A0}{\(\Pi\)}
-\DeclareUnicodeCharacter{2115}{\scalebox{0.8}{\(\nat\)}}
-\DeclareUnicodeCharacter{03B1}{\(\alpha\)}
 
-\usepackage{amsmath,amsthm,amssymb,amsfonts,mathtools}
-\usepackage{stmaryrd}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{tikz}
-\usepackage{ifthen}
-\usepackage{pgfgantt}
-\usepackage{bbold}
-\usepackage{todonotes}
-\usepackage{bussproofs}
-%\usepackage{quiver}
-\usepackage{float}
-\usepackage{caption}
-\usepackage{mathpartir}
-\usepackage{multirow}
-\usepackage{booktabs}
-\usepackage{array}
 
+\usetikzlibrary{positioning}
 
 %--------------------------------------------------------------------------------
 % Document proper
