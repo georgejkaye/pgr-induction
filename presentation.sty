@@ -13,7 +13,7 @@
 \DisableLigatures[f]{encoding = *, family = * }
 
 % Correct spacing around letters in math
-\MTsetmathskips{f}{\thinmuskip}{0mu} 
+\MTsetmathskips{f}{\thinmuskip}{0mu}
 \MTsetmathskips{y}{\thinmuskip}{0mu}
 \MTsetmathskips{p}{\thinmuskip}{0mu}
 \MTsetmathskips{l}{0mu}{\thinmuskip}
@@ -30,7 +30,7 @@
 
 \setbeamerfont{title}{size=\huge, series=\scshape}
 \setbeamerfont{author}{size=\large}
-\setbeamerfont{frametitle}{series=\scshape}
+\setbeamerfont{frametitle}{size=\HUGE, series=\scshape}
 \setbeamertemplate{frametitle}{\MakeLowercase{\insertframetitle}}
 \setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
 \setbeamerfont{button}{size=\footnotesize}
@@ -39,7 +39,7 @@
 
 \usepackage[onehalfspacing]{setspace}
 \setbeamertemplate{title page}[default][left,leftskip=-8pt]
-\addtobeamertemplate{frametitle}{\vskip3mm}{}
+\addtobeamertemplate{frametitle}{\vspace{0.5em}}{\vspace{0.25em}}
 \setbeamersize{text margin left=5mm,text margin right=5mm}
 
 % --- Color ---
@@ -50,8 +50,8 @@
 \setbeamercolor{frametitle}{fg=myblack}
 \setbeamercolor{normal text}{fg=myblack}
 \setbeamercolor{itemize item}{fg=mygray}
-\setbeamercolor{itemize subitem}{fg=mygray} 
-\setbeamercolor{enumerate item}{fg=mygray} 
+\setbeamercolor{itemize subitem}{fg=mygray}
+\setbeamercolor{enumerate item}{fg=mygray}
 \setbeamercolor{enumerate subitem}{fg=mygray}
 \setbeamercolor{footline}{fg=mygray}
 \setbeamercolor{button}{fg=mygray, bg=white}
@@ -81,7 +81,7 @@
 % --- Lists ---
 
 \setbeamertemplate{itemize item}{\textbullet}
-\setbeamertemplate{itemize subitem}{\textendash} 
+\setbeamertemplate{itemize subitem}{\textendash}
 \setbeamertemplate{enumerate item}[default]
 \setbeamertemplate{enumerate subitem}[default]
 \setbeamertemplate{enumerate subitem}{\alph{enumii}.}
@@ -122,7 +122,7 @@
 \newcommand{\lfig}{0.3}
 
 % Centered figures
-\let\oldincludegraphics\includegraphics 
+\let\oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[2][]{\centering\oldincludegraphics[#1]{#2}}
 
 % --- Section slide ---
