@@ -20,6 +20,8 @@
 
 \usetikzlibrary{positioning}
 
+\newcommand{\imagewidth}{14em}
+
 %--------------------------------------------------------------------------------
 % Document proper
 \begin{document}
@@ -44,7 +46,7 @@
 
   % Subtitle
   \node[below right=3.8cm and 0.55cm] at (current page.north west)
-  {(I did not choose this title)};
+  {\textit{(I did not choose this title)}};
 
   % Author
   \node[below right=4.5cm and 0.55cm] at (current page.north west)
@@ -54,14 +56,128 @@
   %\node[below right] (date) at (author.south west) {\today};
 \end{tikzpicture}
 \end{frame}
-
 \begin{frame}
-  \frametitle{Hello!}
+    \frametitle{Hello!}
 
+    \pause
 
+    \centering
+
+    \HUGE
+
+    Every PhD is different!
 
 \end{frame}
+\begin{frame}
+    \frametitle{Meet your supervisor}
+    \centering
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \Large
 
+        Your \alert{supervisor} is your \\ first port of call
+
+        \vspace{1em}
+
+        They will be able to \\
+        give your pointers!
+    \end{minipage}
+    \qquad
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=\imagewidth]{imgs/shoes.jpg}
+    \end{minipage}
+\end{frame}
+\begin{frame}
+    \frametitle{Your research group}
+    \centering
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \Large
+
+        Your \alert{research group} will be working
+        on similar things
+
+        \vspace{1em}
+
+        There may be group lunches, seminars, coffee breaks...
+
+        \vspace{1em}
+
+        Ask your supervisor!
+
+    \end{minipage}
+    \qquad
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=15em]{imgs/theory.jpg}
+    \end{minipage}
+\end{frame}
+\begin{frame}
+    \frametitle{Getting started}
+    \centering
+    \begin{minipage}{0.40\textwidth}
+        \centering
+        \Large
+
+        Progress will be \alert{slow} at first
+
+        \vspace{1em}
+
+        The first year will mostly be \alert{reading} and
+        \alert{exploring}
+
+        \vspace{1em}
+    \end{minipage}
+    \qquad
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=15em]{imgs/reading.jpg}
+    \end{minipage}
+\end{frame}
+\begin{frame}
+    \frametitle{Confused?}
+    \centering
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \Large
+
+        Sometimes it's best to leave things and
+        \alert{come back later}
+
+        \vspace{1em}
+
+        It can be good to look at a \alert{variety}
+        of things
+
+    \end{minipage}
+    \qquad
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=15em]{imgs/confused.jpg}
+    \end{minipage}
+\end{frame}
+\begin{frame}
+    \frametitle{Work time}
+    \centering
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \Large
+
+        Don't feel like you have to work
+        for hours on end
+
+        \vspace{1em}
+
+        Good to \alert{structure} your day
+
+        \vspace{1em}
+
+        Going home for a rest \\
+        always helps!
+
+    \end{minipage}
+    \qquad
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=15em]{imgs/confused.jpg}
+    \end{minipage}
+\end{frame}
 \begin{frame}
     \frametitle{Cookie breaks}
     \centering
@@ -70,26 +186,49 @@
 
     \vspace{1em}
 
-    \begin{minipage}{0.45\textwidth}
-        \alert{Free biscuits}!
-
-        \vspace{0.5em}
-
-        A different host every week!
-
-        \vspace{0.5em}
-
-        You can \alert{volunteer} to be a host!
-
-        \vspace{0.5em}
-
-        Funded by the research committee!
-    \end{minipage}
     \begin{minipage}{0.4\textwidth}
-        \includegraphics[scale=0.10]{imgs/cookies.jpg}
+        \centering
+        \Large
+
+        \alert{Free biscuits!}
+
+        \vspace{1em}
+
+        A different person brings in \\
+        biscuits every week
+    \end{minipage}
+    \qquad
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=\imagewidth]{imgs/cookies.jpg}
     \end{minipage}
 \end{frame}
+\begin{frame}
+    \frametitle{Social events}
+    \centering
 
+    \Large
+    Last year we went hiking...
+
+    \vspace{1em}
+
+    \includegraphics[width=\imagewidth]{imgs/malverns1.jpg}
+    \includegraphics[width=\imagewidth]{imgs/malverns2.jpg}
+
+
+\end{frame}
+\begin{frame}
+    \frametitle{Social events}
+    \centering
+
+    \Large
+    Last year we visited Bletchley Park...
+
+    \vspace{1em}
+
+    \includegraphics[width=\imagewidth]{imgs/bletchley1.jpg}
+    \includegraphics[width=\imagewidth]{imgs/bletchley2.jpg}
+
+\end{frame}
 \begin{frame}
     \frametitle{Hop Garden Social}
     \centering
@@ -98,7 +237,7 @@
 
     \vspace{1em}
 
-    \begin{minipage}{0.45\textwidth}
+    \begin{minipage}{0.4\textwidth}
 
         Welcome social at local pub
 
@@ -110,7 +249,7 @@
 
         Register at:
 
-        \url{https://forms.office.com/e/AUfaWX5HUj}
+        \url{https:\\forms.office.com/e/AUfaWX5HUj}
 
         \vspace{1em}
 
@@ -118,23 +257,9 @@
         (I assume these slides are going to be sent to you)
 
     \end{minipage}
+    \qquad
     \begin{minipage}{0.4\textwidth}
-        \includegraphics[scale=1]{imgs/hopgarden1.jpg}
+        \includegraphics[width=\imagewidth]{imgs/hopgarden1.jpg}
     \end{minipage}
-
-\end{frame}
-\begin{frame}
-    \frametitle{Other things}
-    \centering
-
-    \Large
-    In the past we have gone hiking...
-
-    \vspace{1em}
-
-    \includegraphics[scale=0.15]{imgs/malverns1.jpg}
-    \includegraphics[scale=0.15]{imgs/malverns2.jpg}
-
-
 \end{frame}
 \end{document}
